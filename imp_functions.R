@@ -55,6 +55,22 @@ grepl(pattern = "a", x = animals)
 #Check if strings started in a
 grepl(pattern ="^a", x = animals)
 
-#checj if it ends with g
+#check if it ends with g
 grepl(pattern ="g$", x = animals)
+
+
+#grep just tells the indices of the place where it checks
+grep(pattern = "g$", x = animals)
+
+
+#sub and gsub
+#sub is actually a substitute of replacement function to replace a part in vector
+#it replaces in one index the first element it finds and not all 
+# as soon as it finds the first pattern it stop. Check kangaroo
+sub(pattern = "a", replacement = "o", x = animals )
+
+#gsub replaces all the letters
+gsub(pattern = "a", replacement =  "i", x = animals)
+
+
 
